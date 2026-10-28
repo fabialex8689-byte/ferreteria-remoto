@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferretería La Reina | Plantilla administrativa</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#inicio" aria-label="Ferretería La Reina, inicio">
+        <span class="brand-icon">🛠️</span>
+        <span><strong>FERRETERÍA</strong><small>LA REINA</small></span>
+      </a>
+
+      <div class="menu-label">MENÚ PRINCIPAL</div>
+      <nav class="menu">
+        <a class="menu-link active" href="#inicio"><span class="menu-icon">▦</span> Inicio</a>
+        <a class="menu-link" href="#clientes"><span class="menu-icon">♙</span> Clientes</a>
+        <a class="menu-link" href="#inventario"><span class="menu-icon">▤</span> Inventario</a>
+        <a class="menu-link" href="#ventas"><span class="menu-icon">🛒</span> Ventas (POS)</a>
+        <a class="menu-link" href="#proveedores"><span class="menu-icon">♧</span> Proveedores</a>
+        <a class="menu-link" href="#compras"><span class="menu-icon">▣</span> Compras</a>
+        <a class="menu-link" href="#informes"><span class="menu-icon">▥</span> Informes</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="user-mini">
+          <div class="avatar">AD</div>
+          <div><strong>Administrador</strong><small>Usuario del sistema</small></div>
+        </div>
+        <a class="logout" href="#inicio">↪ &nbsp; Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SISTEMA DE GESTIÓN ADMINISTRATIVA</p>
+          <h1>Ferretería La Reina</h1>
+        </div>
+        <div class="topbar-right">
+          <span class="status-dot"></span><span class="status-text">Bienvenido, Administrador</span>
+          <div class="top-avatar">AD</div>
+        </div>
+      </header>
+
+      <section id="inicio" class="page-section">
+        <div class="welcome-row">
+          <div>
+            <h2>Panel principal</h2>
+            <p class="muted">Bienvenido al sistema de gestión de Ferretería La Reina.</p>
+          </div>
+          <span class="date-chip">◷ &nbsp; Resumen general</span>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon orange">▤</span><span class="stat-tag">Inventario</span></div>
+            <p class="stat-label">Productos registrados</p><strong class="stat-value">128</strong>
+            <p class="stat-foot">Productos en catálogo</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon blue">♙</span><span class="stat-tag">Clientes</span></div>
+            <p class="stat-label">Clientes registrados</p><strong class="stat-value">64</strong>
+            <p class="stat-foot">Base de clientes</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon green">🛒</span><span class="stat-tag">Ventas</span></div>
+            <p class="stat-label">Ventas del día</p><strong class="stat-value">18</strong>
+            <p class="stat-foot">Transacciones de ejemplo</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon purple">▣</span><span class="stat-tag">Compras</span></div>
+            <p class="stat-label">Compras registradas</p><strong class="stat-value">9</strong>
+            <p class="stat-foot">Registros de ejemplo</p>
+          </article>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel">
+            <div class="panel-heading"><div><h3>Accesos rápidos</h3><p class="muted">Selecciona un módulo para consultar su diseño.</p></div></div>
+            <div class="quick-grid">
+              <a href="#inventario" class="quick-link"><span class="quick-icon orange">▤</span><span><strong>Inventario</strong><small>Productos y existencias</small></span><span class="arrow">›</span></a>
+              <a href="#ventas" class="quick-link"><span class="quick-icon green">🛒</span><span><strong>Ventas</strong><small>Registro de ventas</small></span><span class="arrow">›</span></a>
+              <a href="#proveedores" class="quick-link"><span class="quick-icon blue">♧</span><span><strong>Proveedores</strong><small>Datos de proveedores</small></span><span class="arrow">›</span></a>
+              <a href="#informes" class="quick-link"><span class="quick-icon purple">▥</span><span><strong>Informes</strong><small>Resumen administrativo</small></span><span class="arrow">›</span></a>
+            </div>
+          </article>
+          <article class="panel notice-panel">
+            <div class="notice-icon">✦</div>
+            <h3>Control administrativo</h3>
+            <p>Organiza la información de clientes, productos, ventas, proveedores y compras desde una sola interfaz.</p>
+            <div class="notice-line"><span class="status-dot"></span> Plantilla visual sin conexión a base de datos</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="clientes" class="page-section">
+        <div class="section-heading"><div><h2>Clientes</h2><p class="muted">Consulta y administración de clientes.</p></div><button class="btn-primary" type="button">＋ Nuevo cliente</button></div>
+        <div class="panel">
+          <div class="toolbar"><input type="search" placeholder="Buscar cliente..." aria-label="Buscar cliente"><span class="muted">Datos ilustrativos</span></div>
+          <div class="table-wrap"><table><thead><tr><th>ID</th><th>Nombre</th><th>Teléfono</th><th>Correo electrónico</th><th>Acciones</th></tr></thead><tbody>
+            <tr><td>001</td><td><strong>María Fernanda López</strong></td><td>310 555 0182</td><td>maria@example.com</td><td><button class="btn-small">Editar</button> <button class="btn-small danger">Eliminar</button></td></tr>
+            <tr><td>002</td><td><strong>Jorge Ramírez</strong></td><td>312 555 0146</td><td>jorge@example.com</td><td><button class="btn-small">Editar</button> <button class="btn-small danger">Eliminar</button></td></tr>
+          </tbody></table></div>
+        </div>
+      </section>
+
+      <section id="inventario" class="page-section">
+        <div class="section-heading"><div><h2>Inventario</h2><p class="muted">Control de productos, precios y existencias.</p></div><button class="btn-primary" type="button">＋ Nuevo producto</button></div>
+        <div class="panel">
+          <div class="toolbar"><input type="search" placeholder="Buscar producto..." aria-label="Buscar producto"><span class="filter-chip">Todos los productos ▾</span></div>
+          <div class="table-wrap"><table><thead><tr><th>ID</th><th>Producto</th><th>Stock</th><th>Precio compra</th><th>Precio venta</th><th>Marca</th><th>Acciones</th></tr></thead><tbody>
+            <tr><td>001</td><td><strong>Cemento Argos 50 kg</strong><small class="cell-sub">Materiales de construcción</small></td><td><span class="stock good">20 unidades</span></td><td>$ 28.000</td><td><strong>$ 35.000</strong></td><td>Argos</td><td><button class="btn-small">Editar</button> <button class="btn-small danger">Eliminar</button></td></tr>
+            <tr><td>002</td><td><strong>Pintura blanca 1 galón</strong><small class="cell-sub">Pinturas</small></td><td><span class="stock good">14 unidades</span></td><td>$ 42.000</td><td><strong>$ 55.000</strong></td><td>Corona</td><td><button class="btn-small">Editar</button> <button class="btn-small danger">Eliminar</button></td></tr>
+            <tr><td>003</td><td><strong>Martillo de acero</strong><small class="cell-sub">Herramientas</small></td><td><span class="stock low">3 unidades</span></td><td>$ 18.000</td><td><strong>$ 25.000</strong></td><td>Truper</td><td><button class="btn-small">Editar</button> <button class="btn-small danger">Eliminar</button></td></tr>
+          </tbody></table></div>
+        </div>
+      </section>
+
+      <section id="ventas" class="page-section">
+        <div class="section-heading"><div><h2>Ventas (POS)</h2><p class="muted">Interfaz de ejemplo para registrar ventas en mostrador.</p></div><span class="date-chip">Venta nueva</span></div>
+        <div class="pos-grid">
+          <article class="panel"><div class="panel-heading"><div><h3>Productos disponibles</h3><p class="muted">Selecciona un producto para agregarlo al ticket.</p></div></div>
+            <input class="full-input" type="search" placeholder="Buscar producto...">
+            <div class="product-grid">
+              <div class="product-card"><div class="product-symbol">🧱</div><strong>Cemento Argos 50 kg</strong><small>Stock: 20</small><b>$ 35.000</b><button class="btn-primary full-btn">＋ Agregar</button></div>
+              <div class="product-card"><div class="product-symbol">🎨</div><strong>Pintura blanca 1 galón</strong><small>Stock: 14</small><b>$ 55.000</b><button class="btn-primary full-btn">＋ Agregar</button></div>
+              <div class="product-card"><div class="product-symbol">🔨</div><strong>Martillo de acero</strong><small>Stock: 3</small><b>$ 25.000</b><button class="btn-primary full-btn">＋ Agregar</button></div>
+            </div>
+          </article>
+          <article class="panel ticket"><div class="panel-heading"><div><h3>Ticket de venta</h3><p class="muted">Resumen de compra</p></div><span class="ticket-number">#0001</span></div>
+            <label for="cliente">Cliente</label><select id="cliente" class="full-input"><option>Mostrador general</option><option>María Fernanda López</option></select>
+            <div class="empty-ticket"><span>🛒</span><strong>Tu ticket está listo</strong><small>Los productos agregados aparecerán aquí.</small></div>
+            <div class="totals"><div><span>Subtotal</span><strong>$ 0</strong></div><div><span>IVA (19%)</span><strong>$ 0</strong></div><div class="total-line"><span>Total</span><strong>$ 0</strong></div></div>
+            <button class="btn-primary full-btn" type="button">PROCESAR PAGO</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="proveedores" class="page-section">
+        <div class="section-heading"><div><h2>Proveedores</h2><p class="muted">Administración de empresas y contactos proveedores.</p></div><button class="btn-primary" type="button">＋ Nuevo proveedor</button></div>
+        <div class="panel"><div class="toolbar"><input type="search" placeholder="Buscar proveedor..." aria-label="Buscar proveedor"></div>
+          <div class="table-wrap"><table><thead><tr><th>ID</th><th>Razón social</th><th>Contacto</th><th>Correo</th><th>Dirección</th><th>Acciones</th></tr></thead><tbody>
+            <tr><td>001</td><td><strong>Distribuciones del Cauca</strong></td><td>Andrés Muñoz</td><td>ventas@example.com</td><td>Centro, Popayán</td><td><button class="btn-small">Editar</button> <button class="btn-small danger">Eliminar</button></td></tr>
+            <tr><td>002</td><td><strong>Materiales La 13</strong></td><td>Laura Gómez</td><td>contacto@example.com</td><td>Zona comercial</td><td><button class="btn-small">Editar</button> <button class="btn-small danger">Eliminar</button></td></tr>
+          </tbody></table></div>
+        </div>
+      </section>
+
+      <section id="compras" class="page-section">
+        <div class="section-heading"><div><h2>Compras</h2><p class="muted">Registro visual de compras a proveedores.</p></div><button class="btn-primary" type="button">＋ Nueva compra</button></div>
+        <div class="panel"><div class="form-grid"><label>Proveedor<select class="full-input"><option>Seleccionar proveedor</option><option>Distribuciones del Cauca</option></select></label><label>Producto<select class="full-input"><option>Seleccionar producto</option><option>Cemento Argos 50 kg</option></select></label><label>Cantidad<input class="full-input" type="number" placeholder="Ej. 10"></label><label>Detalle de compra<input class="full-input" type="text" placeholder="Descripción (opcional)"></label></div>
+          <div class="purchase-summary"><div><span>Subtotal</span><strong>$ 0</strong></div><div><span>IVA (19%)</span><strong>$ 0</strong></div><div class="total-line"><span>Total</span><strong>$ 0</strong></div></div><button class="btn-primary" type="button">Guardar compra</button>
+        </div>
+      </section>
+
+      <section id="informes" class="page-section">
+        <div class="section-heading"><div><h2>Informes</h2><p class="muted">Resumen de información para el control administrativo.</p></div></div>
+        <div class="stats-grid report-stats"><article class="stat-card"><p class="stat-label">Valor inventario (ejemplo)</p><strong class="stat-value">$ 4.820.000</strong><p class="stat-foot">Valor referencial</p></article><article class="stat-card"><p class="stat-label">Ventas acumuladas</p><strong class="stat-value">$ 1.265.000</strong><p class="stat-foot">Datos de demostración</p></article><article class="stat-card"><p class="stat-label">Compras acumuladas</p><strong class="stat-value">$ 780.000</strong><p class="stat-foot">Datos de demostración</p></article></div>
+        <div class="panel"><div class="panel-heading"><div><h3>Exportación de informes</h3><p class="muted">Estos botones son ilustrativos en esta plantilla estática.</p></div></div><div class="export-row"><button class="btn-outline">⇩ Exportar a Excel</button><button class="btn-outline">⇩ Exportar a PDF</button></div></div>
+      </section>
+
+      <footer class="footer">© 2026 Ferretería La Reina. </footer>
+    </main>
+  </div>
+</body>
+</html>

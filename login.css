@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #252b35;
+}
+
+.contenedor-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.panel-marca {
+    background: #252b35;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+}
+
+.logo {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.etiqueta {
+    color: #f4a47e;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.panel-marca h1 {
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.panel-marca h1 span {
+    color: #e96d35;
+}
+
+.eslogan {
+    color: #e0e2e5;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    font-size: 12px;
+    color: #ffad83;
+}
+
+.panel-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: white;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 380px;
+}
+
+.icono-login {
+    background: #fff0e8;
+    color: #e96d35;
+    border-radius: 12px;
+    padding: 12px;
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    color: #e96d35;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.descripcion {
+    color: #7d8591;
+    font-size: 13px;
+    margin-bottom: 28px;
+}
+
+form>label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+form>input {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e8ed;
+    border-radius: 7px;
+    outline-color: #e96d35;
+}
+
+form .recordar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+
+.recordar input {
+    accent-color: #e96d35;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #e96d35;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d95d27;
+}
+
+.nota {
+    color: #9299a3;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+footer {
+    color: #9299a3;
+    font-size: 11px;
+    margin-top: 45px;
+}
+
+@media (max-width: 700px) {
+    .contenedor-login {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-marca {
+        padding: 30px 15px;
+    }
+
+    .panel-marca h1 {
+        font-size: 32px;
+    }
+
+    .panel-formulario {
+        padding: 35px 22px;
+    }
+}
